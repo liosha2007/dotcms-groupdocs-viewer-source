@@ -1,0 +1,3 @@
+<project name="Embed GroupDocs Document Viewer" default="build">
+    <import file="../common.xml"/>
+</project>
