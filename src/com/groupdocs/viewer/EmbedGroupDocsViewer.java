@@ -5,14 +5,15 @@ import com.dotmarketing.portlets.structure.factories.FieldFactory;
 import com.dotmarketing.portlets.structure.factories.StructureFactory;
 import com.dotmarketing.portlets.structure.model.Field;
 import com.dotmarketing.portlets.structure.model.Structure;
+import org.apache.velocity.tools.view.tools.ViewTool;
 
-public class EmbedGroupDocsViewer implements PluginDeployer {
-    public boolean deploy() {
-        // TODO: Need to implement
-        return false;
+public class EmbedGroupDocsViewer implements ViewTool {
+    @Override
+    public void init(Object o) {
+        //To change body of implemented methods use File | Settings | File Templates.
     }
 
-    public boolean redeploy(String version) {
-        return false;
+    public String testMethod() {
+        return "Test Out";
     }
 }

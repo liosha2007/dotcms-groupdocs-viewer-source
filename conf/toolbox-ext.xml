@@ -1,0 +1,5 @@
+<tool>
+    <key>GroupDocsViewer</key>
+    <scope>application</scope>
+    <class>com.groupdocs.viewer.EmbedGroupDocsViewer</class>
+</tool>
