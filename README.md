@@ -1,10 +1,11 @@
-GroupDocs Viewer plugin for dotCMS (Source)
+GroupDocs Viewer for dotCMS
 ==============================
+GroupDocs Viewer plugin for dotCMS (Source)
 
 ### Plugin Installation Instructions:
 
-1. Download plugin from [GitHub](https://github.com/liosha2007/dotcms-groupdocs-signature)
-2. Extract files from archive to directory with name 'com.groupdocs.signature'
+1. Download plugin from [GitHub](https://github.com/liosha2007/dotcms-groupdocs-viewer)
+2. Extract files from archive to directory with name 'com.groupdocs.viewer'
 3. Copy it to 'dotCMS\plugins\'
 4. Open command line (with JDK 1.6)
 5. Run commands `ant undeploy-plugins` , `ant build-plugins` , `ant deploy-plugins` from cms root directory
@@ -24,16 +25,18 @@ GroupDocs Viewer plugin for dotCMS (Source)
 11. In 'Code' field write: 
 With all parameters
 ```
-${GroupDocsSignature.RenderIframe('your_signature_key', 'your_form_guid', width_for_your_iframe, height_for_your_iframe, 'frame_border_width')}
+${GroupDocsViewer.RenderIframe('your_document_guid', 'document_quality', 'use_pdf', 'allow_download', 'frame_border_width', width_for_your_iframe, height_for_your_iframe)}
 ```
-* your_signature_key - How to get 
-* your_form_guid - How to create Signature Form; How to get Signature Form ID
+* your_document_guid - How to get Document ID (GUID)
+* document_quality - number 10, 20, 30...100
+* use_pdf - True or False
+* allow_download - True or False
+* frame_border_width - 0 or 1
 * width_for_your_iframe - iframe width in pixels
 * height_for_your_iframe - iframe height in pixels
-* frame_border_width - 0 or 1
 Or simple:
 ```
-${GroupDocsSignature.RenderIframe('your_signature_key', 'your_form_guid', width_for_your_iframe, height_for_your_iframe)}
+${GroupDocsViewer.RenderIframe('your_document_guid', width_for_your_iframe, height_for_your_iframe)}
 ```
 12. Click 'Save / Publish' button (maybe you will should click 'Lock for Editing' button before)
 13. Click 'Publish Page' button
