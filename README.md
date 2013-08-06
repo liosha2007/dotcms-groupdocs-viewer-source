@@ -23,21 +23,23 @@ GroupDocs Viewer plugin for dotCMS (Source)
 9. Select 'Simple Widget' -> 'Create New Simple Widget'
 10. In 'Widget Title' field write any title
 11. In 'Code' field write: 
-With all parameters
-```
-${GroupDocsViewer.RenderIframe('your_document_guid', 'document_quality', 'use_pdf', 'allow_download', 'frame_border_width', width_for_your_iframe, height_for_your_iframe)}
-```
-* your_document_guid - How to get Document ID (GUID)
-* document_quality - number 10, 20, 30...100
-* use_pdf - True or False
-* allow_download - True or False
-* frame_border_width - 0 or 1
-* width_for_your_iframe - iframe width in pixels
-* height_for_your_iframe - iframe height in pixels
-Or simple:
-```
-${GroupDocsViewer.RenderIframe('your_document_guid', width_for_your_iframe, height_for_your_iframe)}
-```
+
+	With all parameters
+	```
+	${GroupDocsViewer.RenderIframe('your_document_guid', 'document_quality', 'use_pdf', 'allow_download', 'frame_border_width', width_for_your_iframe, height_for_your_iframe)}
+	```
+		> * your&#95;document&#95;guid - How to get [Document ID (GUID)](http://groupdocs.com/docs/pages/viewpage.action?pageId=1409575)
+		> * document&#95;quality - number 10, 20, 30...100
+		> * use&#95;pdf - True or False
+		> * allow&#95;download - True or False
+		> * frame&#95;border&#95;width - 0 or 1
+		> * width&#95;for&#95;your&#95;iframe - iframe width in pixels
+		> * height&#95;for&#95;your&#95;iframe - iframe height in pixels
+	Or simple:
+	```
+	${GroupDocsViewer.RenderIframe('your_document_guid', width_for_your_iframe, height_for_your_iframe)}
+	```
+
 12. Click 'Save / Publish' button (maybe you will should click 'Lock for Editing' button before)
 13. Click 'Publish Page' button
 
